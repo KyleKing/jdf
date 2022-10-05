@@ -275,7 +275,7 @@
 \RequirePackage[
 	bibstyle=authoryear,
 	dashed=false,
-	sorting=ynt,
+	sorting=nyt,
 	natbib=true,
 	maxbibnames=99
 ]{biblatex}
@@ -305,13 +305,13 @@
 % https://tex.stackexchange.com/questions/312539/unwanted-comma-between-author-and-year-using-citet-command
 \DeclareCiteCommand{\citeyear}
     {\usebibmacro{prenote}}
-    {\printfield{year}\printfield{extrayear}}
+    {\printfield{year}}
     {\multicitedelim}
     {\usebibmacro{postnote}}
 
 \DeclareCiteCommand{\citeyearpar}[\mkbibparens]
     {\usebibmacro{prenote}}
-    {\printfield{year}\printfield{extrayear}}
+    {\printfield{year}}
     {\multicitedelim}
     {\usebibmacro{postnote}}
 
